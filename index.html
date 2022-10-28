@@ -51,7 +51,6 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         display: inline-block;
         vertical-align: top;
         text-align: center;
-        padding: 0 10px;
     }
     .banner-food {
         background-image: url('./images/food-banner.jpg');
@@ -64,6 +63,17 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         font-size: 28px;
         display: flex;
         flex-direction: column;
+    }
+    .heading {
+        font-size: 28px;
+        padding: 12px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .paragraph {
+        font-size: 14px;
+        padding: 6px 16px;
+        text-align: left;
     }
 </style>
 </head>
@@ -81,29 +91,29 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                 <td>
                     <table width="100%">
                         <tr>
-                            <td class="three-column" style="background-color: #1B8FE0;">
-                                <table class="column">
+                            <td class="three-column" style="background-color: #1B8FE0;padding: 14px 0;">
+                                <table class="column" style="padding: 0 10px;">
                                     <tr>
                                         <!-- WebDev Logo -->
-                                        <td style="padding: 14px 0;">
+                                        <td>
                                             <a href="#"><img src="images/web-dev-logo.png" alt="WebDev Logo"
                                                 width="180" title="Visit Our Website"></a>
                                         </td>
                                     </tr>
                                 </table>
-                                <table class="column">
+                                <table class="column" style="padding: 0 10px;">
                                     <tr>
                                         <!-- WebDev Logo -->
-                                        <td style="padding: 14px 0;">
+                                        <td>
                                             <a href="#"><img src="images/web-dev-logo.png" alt="WebDev Logo"
                                                 width="180" title="Visit Our Website"></a>
                                         </td>
                                     </tr>
                                 </table>
-                                <table class="column">
+                                <table class="column" style="padding: 0 10px;">
                                     <tr>
                                         <!-- WebDev Logo -->
-                                        <td style="padding: 14px 0;">
+                                        <td>
                                             <a href="#"><img src="images/web-dev-logo.png" alt="WebDev Logo"
                                                 width="180" title="Visit Our Website"></a>
                                         </td>
@@ -114,18 +124,76 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                     </table>
                 </td>
             </tr>
+            <!-- BANNER - RESTAURANT -->
             <tr>
                 <td>
                     <table width="100%">
                         <tr>
-                            <td style="padding: 30px 0;">
+                            <!-- Heading - whatever you create -->
+                            <td style="padding: 10px 0;">
                                 <div class="banner-food" style="position: relative;">
-                                    <p style="padding: 12px 32px;margin: 40px 16px 16px;font-size: 28px;
-                                    background-color: rgba(27, 143, 224, 0.85);color: #ECECEC;
-                                    text-align: center;max-width: fit-content;margin-left: auto;margin-right: auto;">
+                                    <p style="padding: 12px 32px;font-size: 28px;
+                                    background-color: rgba(27, 143, 224, 0.85);
+                                    color: #ECECEC;text-align: center;max-width: fit-content;
+                                    margin-left: auto;margin-right: auto;">
                                         Whatever you create...
                                     </p>
                                 </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 3 ICONS - DISCOVER STANDOUT SELL -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td style="background-color: #1B8FE0;padding: 32px 0;">
+                                <table class="three-column">
+                                    <tr>
+                                        <td>
+                                            <table class="column">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="images/magnifying-glass-icon.png" alt="Discover"
+                                                            width="50" title="Help your business be discovered!"></a>
+                                                        <p class="heading">Visibility</p>
+                                                        <p class="paragraph">Get your products in front of more people than
+                                                            ever with <strong>Google SEO tools</strong>, and <strong>media-
+                                                                centric layouts</strong> that put your creations front and center!
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="column">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="images/star-icon.png" alt="Stand Out"
+                                                            width="50" title="Help your site stand out from the pack!"></a>
+                                                        <p class="heading" style="padding: 12px 0;">Stand Out</p>
+                                                        <p class="paragraph">With <strong>thousands of cutting edge templates,</strong> your 
+                                                            site will be as outstanding as your products!
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="column">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="images/sell-icon.png" alt="Discover"
+                                                            width="50" title="Help your business be discovered!"></a>
+                                                        <p class="heading">Sales</p>
+                                                        <p class="paragraph">Our <strong>e-commerce widgets</strong> will allow you
+                                                             to take total control of your online storefront, and 
+                                                            allow you to reach the world with your creation!
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                     </table>
