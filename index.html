@@ -25,6 +25,9 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     img {
         border: 0;
     }
+    a {
+        text-decoration: none;
+    }
     .wrapper {
         width: 100%;
         table-layout: fixed;
@@ -52,28 +55,75 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         vertical-align: top;
         text-align: center;
     }
-    .banner-food {
-        background-image: url('./images/food-banner.jpg');
+    .two-column {
+        text-align: center;
+        font-size: 0;
+        padding: 30px 0;
+    }
+    .two-column .column {
+        width: 100%;
+        max-width: 300px;
+        font-size: 0;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+    }
+    .heading {
+        padding: 12px;
+        font-size: 26px;
+        font-weight: 600;
+        background-color:#ECECEC;
+        color: #1B8FE0;
+        text-align: center;
+        margin-top: 0;
+    }
+    .sales-heading {
+        font-size: 28px;
+        font-weight: 500;
+        padding: 12px 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .sales-paragraph {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 6px 16px;
+        margin-top: 2px;
+        text-align: left;
+    }
+    .banner-food, .banner-jewelry {
         background-position: center;
         background-size: contain;
+        position: relative;
         max-width: 600px;
         max-height: 100%;
-        height: 399px;
+        height: 390px;
         text-align: left;
         font-size: 28px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 12px;
     }
-    .heading {
-        font-size: 28px;
-        padding: 12px;
+    .banner-food {
+        background-image: url('./images/food-banner.jpg');
+    }
+    .banner-jewelry {
+        background-image: url('./images/jewelry-blue.jpg');        
+    }
+    .blue-button {
+        padding: 12px 24px;
+        font-size: 20px;
+        font-weight: 500;
         text-align: center;
+        background-color: #1B8FE0;
+        color: #ECECEC;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        width: fit-content;
         margin: 0 auto;
-    }
-    .paragraph {
-        font-size: 14px;
-        padding: 6px 16px;
-        text-align: left;
     }
 </style>
 </head>
@@ -130,15 +180,14 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                     <table width="100%">
                         <tr>
                             <!-- Heading - whatever you create -->
-                            <td style="padding: 10px 0;">
-                                <div class="banner-food" style="position: relative;">
-                                    <p style="padding: 12px 32px;font-size: 28px;
-                                    background-color: rgba(27, 143, 224, 0.85);
-                                    color: #ECECEC;text-align: center;max-width: fit-content;
-                                    margin-left: auto;margin-right: auto;">
+                            <td style="padding: 2px 0;">
+                                <div class="banner-food">
+                                    <p class="heading">
                                         Whatever you create...
                                     </p>
-                                </div>
+                                    <!-- CTA button -->
+                                    <a href="#" class="blue-button"><span>See Real Customer Sites</span></a>
+                                </div>                                
                             </td>
                         </tr>
                     </table>
@@ -158,9 +207,8 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                                                     <td>
                                                         <a href="#"><img src="images/magnifying-glass-icon.png" alt="Discover"
                                                             width="50" title="Help your business be discovered!"></a>
-                                                        <p class="heading">Visibility</p>
-                                                        <p class="paragraph">Get your products in front of more people than
-                                                            ever with <strong>Google SEO tools</strong>, and <strong>media-
+                                                        <p class="sales-heading">Visibility</p>
+                                                        <p class="sales-paragraph"><strong>Google SEO tools</strong>, and <strong>media-
                                                                 centric layouts</strong> that put your creations front and center!
                                                         </p>
                                                     </td>
@@ -171,8 +219,8 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                                                     <td>
                                                         <a href="#"><img src="images/star-icon.png" alt="Stand Out"
                                                             width="50" title="Help your site stand out from the pack!"></a>
-                                                        <p class="heading" style="padding: 12px 0;">Stand Out</p>
-                                                        <p class="paragraph">With <strong>thousands of cutting edge templates,</strong> your 
+                                                        <p class="sales-heading">Stand Out</p>
+                                                        <p class="sales-paragraph">With <strong>thousands of cutting edge templates,</strong> your 
                                                             site will be as outstanding as your products!
                                                         </p>
                                                     </td>
@@ -183,10 +231,68 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                                                     <td>
                                                         <a href="#"><img src="images/sell-icon.png" alt="Discover"
                                                             width="50" title="Help your business be discovered!"></a>
-                                                        <p class="heading">Sales</p>
-                                                        <p class="paragraph">Our <strong>e-commerce widgets</strong> will allow you
-                                                             to take total control of your online storefront, and 
-                                                            allow you to reach the world with your creation!
+                                                        <p class="sales-heading">Sales</p>
+                                                        <p class="sales-paragraph">Our <strong>e-commerce widgets</strong> will allow you
+                                                             to take total control of your online storefront!
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- BANNER - JEWELRY -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <!-- Heading -->
+                            <td style="padding: 2px 0;background-color: #ECECEC;">
+                                <div class="banner-jewelry">
+                                    <p class="heading">
+                                        Give your business the advantage online!
+                                    </p>
+                                    <!-- CTA button -->
+                                    <a href="#" class="blue-button"><span>Browse Our Templates</span></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td style="background-color: #1B8FE0;">
+                                <table class="two-column">
+                                    <tr>
+                                        <td>
+                                            <table class="column">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="images/star-icon.png" alt="Free Account"
+                                                            width="100" title="Make a free account today!"></a>
+                                                        <p class="sales-heading" style="padding: 16px 26px;">FREE</p>
+                                                        <p class="sales-paragraph" style="padding: 0 32px;">Create your free account today to 
+                                                            take the first step towards a thriving online storefront!
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="column">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="images/sell-icon.png" alt="Free Account"
+                                                            width="100" title="Make a free account today!"></a>
+                                                        <p class="sales-heading" style="padding: 16px 26px;">PRO</p>
+                                                        <p class="sales-paragraph" style="padding: 0 32px;">Sign up for a WebDev pro account to 
+                                                            unlock exclusive features to push your site into the stratosphere!
                                                         </p>
                                                     </td>
                                                 </tr>
