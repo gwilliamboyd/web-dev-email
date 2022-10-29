@@ -69,11 +69,11 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         text-align: center;
     }
     .heading {
-        padding: 12px;
+        padding: 14px;
         font-size: 26px;
         font-weight: 600;
-        background-color:#ECECEC;
-        color: #1B8FE0;
+        background-color:#1B8FE0;
+        color: #ECECEC;
         text-align: center;
         margin-top: 0;
     }
@@ -96,20 +96,19 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         background-size: contain;
         position: relative;
         max-width: 600px;
-        max-height: 100%;
-        height: 390px;
+        max-height: 100%;        
         text-align: left;
         font-size: 28px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: 12px;
     }
     .banner-food {
         background-image: url('./images/food-banner.jpg');
+        height: 390px;
     }
     .banner-jewelry {
-        background-image: url('./images/jewelry-blue.jpg');        
+        background-color: #1B8FE0;        
     }
     .blue-button {
         padding: 12px 24px;
@@ -118,12 +117,33 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         text-align: center;
         background-color: #1B8FE0;
         color: #ECECEC;
-        border-radius: 5px;
+        border-radius: 3px;
         display: flex;
         justify-content: center;
         align-self: flex-end;
         width: fit-content;
-        margin: 0 auto;
+        margin: 0 auto 12px;
+    }
+    .white-button {
+        padding: 12px 24px;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        background-color: #ECECEC;
+        color: #1B8FE0;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        width: fit-content;
+        margin: 12px auto 12px;
+    }
+    .features {
+        background-color: #ECECEC;
+        color: #1B8FE0;
+        font-size: 16px;
+        font-weight: 300;
+
     }
 </style>
 </head>
@@ -174,13 +194,18 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                     </table>
                 </td>
             </tr>
+            <tr>
+                <td height="10" style="background-color: #ECECEC;">
+
+                </td>
+            </tr>
             <!-- BANNER - RESTAURANT -->
             <tr>
                 <td>
                     <table width="100%">
                         <tr>
                             <!-- Heading - whatever you create -->
-                            <td style="padding: 2px 0;">
+                            <td>
                                 <div class="banner-food">
                                     <p class="heading">
                                         Whatever you create...
@@ -246,19 +271,49 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                     </table>
                 </td>
             </tr>
+            <tr>
+                <td height="10" style="background-color: #ECECEC;">
+
+                </td>
+            </tr>
             <!-- BANNER - JEWELRY -->
             <tr>
                 <td>
                     <table width="100%">
                         <tr>
                             <!-- Heading -->
-                            <td style="padding: 2px 0;background-color: #ECECEC;">
+                            <td style="background-color: #ECECEC;">
                                 <div class="banner-jewelry">
-                                    <p class="heading">
+                                    <p class="heading" style="padding: 20px 24px;">
                                         Give your business the advantage online!
                                     </p>
-                                    <!-- CTA button -->
-                                    <a href="#" class="blue-button"><span>Browse Our Templates</span></a>
+                                    <div style="display: flex;justify-content:center;">
+                                        <img src="images/mountain-template.jpg" alt="Mountain"
+                                        width="520px" title="Check out that view!">
+                                    </div>                                    
+                                    <!-- Template example images 
+                                    <table width="100%">
+                                        <tr>
+                                            <td style="display: flex;justify-content: space-around;
+                                            align-items: center;">
+                                                <div style="padding: 10px;height: 159px;
+                                                background-color: #ECECEC;">
+                                                7px was being added to the height of these divs, and I 
+                                                couldn't figure out why. Therefore, I manually set the 
+                                                height of each div to 141px (to match the height of each image). 
+                                                    <img src="images/vacation-template.jpg" 
+                                                    alt="Vacation" width="260" title="Vacation">
+                                                </div>
+                                                <div style="padding: 20px 10px;height: 136px;
+                                                background-color: #ECECEC;">
+                                                    <img src="images/real-estate-template.jpg" 
+                                                    alt="Vacation" width="260" title="Vacation">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    CTA button -->
+                                    <a href="#" class="white-button"><span>Browse Our Templates</span></a>
                                 </div>
                             </td>
                         </tr>
@@ -266,45 +321,94 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                 </td>
             </tr>
             <tr>
+                <td height="10" style="background-color: #ECECEC;">
+
+                </td>
+            </tr>
+            <tr>
                 <td>
                     <table width="100%">
                         <tr>
                             <td style="background-color: #1B8FE0;">
-                                <table class="two-column">
+                                <table>
                                     <tr>
                                         <td>
-                                            <table class="column">
+                                            <table class="two-column" style="padding: 30px 0 0">
                                                 <tr>
                                                     <td>
-                                                        <a href="#"><img src="images/star-icon.png" alt="Free Account"
-                                                            width="100" title="Make a free account today!"></a>
-                                                        <p class="sales-heading" style="padding: 16px 26px;">FREE</p>
-                                                        <p class="sales-paragraph" style="padding: 0 32px;">Create your free account today to 
-                                                            take the first step towards a thriving online storefront!
-                                                        </p>
+                                                        <table class="column">
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#"><img src="images/star-icon.png" alt="Free Account"
+                                                                        width="100" title="Make a free account today!"></a>
+                                                                    <p class="sales-heading" style="padding: 16px 26px;">FREE</p>
+                                                                    <p class="sales-paragraph" style="padding: 0 32px;">Create your free account today to 
+                                                                        take the first step towards a thriving online storefront!
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table class="column">
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#"><img src="images/sell-icon.png" alt="Free Account"
+                                                                        width="100" title="Make a free account today!"></a>
+                                                                    <p class="sales-heading" style="padding: 16px 26px;">PRO</p>
+                                                                    <p class="sales-paragraph" style="padding: 0 32px;">
+                                                                        Unlock <strong>exclusive features</strong> to push your new website into the stratosphere!
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                     </td>
                                                 </tr>
                                             </table>
-                                            <table class="column">
+                                            <!-- Features list - white background -->
+                                            <table width="100%">
                                                 <tr>
-                                                    <td>
-                                                        <a href="#"><img src="images/sell-icon.png" alt="Free Account"
-                                                            width="100" title="Make a free account today!"></a>
-                                                        <p class="sales-heading" style="padding: 16px 26px;">PRO</p>
-                                                        <p class="sales-paragraph" style="padding: 0 32px;">Sign up for a WebDev pro account to 
-                                                            unlock exclusive features to push your site into the stratosphere!
-                                                        </p>
+                                                    <td style="padding: 0 20px 20px;">
+                                                        <table class="two-column" style="padding: 10px 0 0;background-color: #ECECEC;">
+                                                            <tr>
+                                                                <td style="display: flex;justify-content:space-around;">
+                                                                    <table class="column">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <ul class="sales-paragraph" 
+                                                                                style="padding: 0 32px;color: #1B8FE0;">
+                                                                                    <li>Mind-blowing templates to wow your customers!</li>
+                                                                                    <li>Google SEO tools to get your new website out there!</li>
+                                                                                    <li>Support for up to 50mb of media site-wide!</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table class="column">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <ul class="sales-paragraph" 
+                                                                                style="padding: 0 32px;color: #109D2C;">
+                                                                                    <li>Mind-blowing templates to wow your customers!</li>
+                                                                                    <li>Google SEO tools to get your new website out there!</li>
+                                                                                    <li>Support for up to 50mb of media site-wide!</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                     </td>
                                                 </tr>
                                             </table>
                                         </td>
                                     </tr>
-                                </table>
+                                </table>                                
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
+            
         </table>
     </center>
     
