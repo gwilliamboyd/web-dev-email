@@ -68,6 +68,22 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         vertical-align: top;
         text-align: center;
     }
+    .padding-bar {
+        height: 10px;
+        background-color: #ECECEC;
+    }
+    .nav-bar {
+        background-color: #1B8FE0;
+        padding: 24px 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #social-icons {
+        display: flex;
+        gap: 6px;
+        align-self: flex-end;
+        padding-bottom: 6px;
+    }
     .heading {
         padding: 14px;
         font-size: 26px;
@@ -150,61 +166,42 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 <body>
     <center class="wrapper">
         <table class="main">
-            <!-- TOP BAR - WHITE -->
+            <!-- PADDING BAR -->
             <tr>
-                <td height="10" style="background-color: #ECECEC;">
-
-                </td>
+                <td class="padding-bar"></td>
             </tr>
-            <!-- HEADER -->
+            <!-- NAV BAR -->
             <tr>
                 <td>
                     <table width="100%">
                         <tr>
-                            <td class="three-column" style="background-color: #1B8FE0;padding: 20px 0;">
-                                <table class="column" style="padding: 0 10px;">
-                                    <tr>
-                                        <!-- WebDev Logo -->
-                                        <td width="180px">
-                                            
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table class="column" style="padding: 0 10px;">
-                                    <tr>
-                                        <!-- WebDev Logo -->
-                                        <td>
-                                            <a href="#"><img src="images/compilr-logo.png" alt="WebDev Logo"
-                                                width="180" title="Visit Our Website"></a>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table class="column" style="padding: 0 0 10px;vertical-align: bottom;">
-                                    <tr>
-                                        <!-- WebDev Logo -->
-                                        <td>
-                                            <div style="display: flex;justify-content:flex-end;">
-                                                <a href="#"><img src="images/facebook-icon.png" alt="facebook-icon"
-                                                    width="32px" title="Visit our Facebook page!"></a>
-                                                <a href="#"><img src="images/twitter-icon.png" alt="facebook-icon"
-                                                    width="32px" title="Visit our Facebook page!"></a>
-                                                <a href="#"><img src="images/instagram-icon.png" alt="facebook-icon"
-                                                    width="32px" title="Visit our Facebook page!"></a>
-                                                <a href="#"><img src="images/youtube-icon.png" alt="facebook-icon"
-                                                    width="32px" title="Visit our Facebook page!"></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
+                            <td>
+                                <!-- Compilr logo -->
+                                <div class="nav-bar">
+                                    <div>
+                                        <a href="#"><img src="images/compilr-logo.png" alt="Compilr"
+                                            width="180px" title="Compilr"></a>
+                                    </div>
+                                    <!-- Social media icons -->
+                                    <div id="social-icons">
+                                        <a href="#"><img src="images/facebook-icon.png" alt="Facebook link"
+                                            width="32px" title="Visit our Facebook page!"></a>
+                                        <a href="#"><img src="images/twitter-icon.png" alt="Facebook link"
+                                            width="32px" title="Visit our Facebook page!"></a>
+                                        <a href="#"><img src="images/instagram-icon.png" alt="Facebook link"
+                                            width="32px" title="Visit our Facebook page!"></a>
+                                        <a href="#"><img src="images/youtube-icon.png" alt="Facebook link"
+                                            width="32px" title="Visit our Facebook page!"></a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
+            <!-- PADDING BAR -->
             <tr>
-                <td height="10" style="background-color: #ECECEC;">
-
-                </td>
+                <td class="padding-bar"></td>
             </tr>
             <!-- BANNER - RESTAURANT -->
             <tr>
@@ -278,10 +275,9 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                     </table>
                 </td>
             </tr>
+            <!-- PADDING BAR -->
             <tr>
-                <td height="10" style="background-color: #ECECEC;">
-
-                </td>
+                <td class="padding-bar"></td>
             </tr>
             <!-- BANNER - JEWELRY -->
             <tr>
@@ -328,10 +324,9 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                     </table>
                 </td>
             </tr>
+            <!-- PADDING BAR -->
             <tr>
-                <td height="10" style="background-color: #ECECEC;">
-
-                </td>
+                <td class="padding-bar"></td>
             </tr>
             <tr>
                 <td>
