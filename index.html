@@ -51,6 +51,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         width: 100%;
         max-width: 200px;
         font-size: 0;
+        padding: 0 4px;
         display: inline-block;
         vertical-align: top;
         text-align: center;
@@ -160,9 +161,16 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         background-color: #ECECEC;
         color: #1B8FE0;
         font-size: 16px;
-        font-weight: 300;
-
+        font-weight: 400;
+        border: 0;
+        margin: 0 auto;
+        padding: 4px 12px;
     }
+    .features th, .features td {
+        border: 0;
+        padding: 8px 12px;
+    }
+    
     .call-to-action {
         background-color: #1B8FE0;
         color: #ECECEC;
@@ -351,58 +359,123 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
             <tr>
                 <td class="padding-bar"></td>
             </tr>
+            <!-- FREE VS PRO FEATURES -->
             <tr>
                 <td>
                     <table width="100%">
                         <tr>
-                            <td style="background-color: #1B8FE0;">
-                                <table>
+                            <td style="background-color: #1B8FE0;padding: 20px 0;">
+                                <table width="100%">
                                     <tr>
                                         <td>
-                                            <div style="display: flex;justify-content:space-around;
+                                            <p class="heading" style="margin-bottom: 0;">Which Compilr Site Is Right For You?</p>
+                                            <!-- <div style="display: flex;justify-content:space-around;
                                             padding: 20px 32px;gap: 40px;">                                                               
                                                 <a href="#"><img src="images/free logo.png" alt="Free Account"
                                                     width="160" title="Make a free account today!"></a>
                                                 <a href="#"><img src="images/free logo.png" alt="Free Account"
                                                     width="160" title="Make a free account today!"></a>
-                                            </div>
+                                            </div> -->
                                             <!-- Features list - white background -->
-                                            <table width="100%">
-                                                <tr>
-                                                    <td style="padding: 0 20px 20px;">
-                                                        <table class="two-column" style="padding: 10px 0 0;background-color: #ECECEC;">
-                                                            <tr>
-                                                                <td style="display: flex;justify-content:space-around;">
-                                                                    <table class="column">
-                                                                        <tr>
-                                                                            <td>
-                                                                                <ul class="sales-paragraph" 
-                                                                                style="padding: 0 32px;color: #1B8FE0;">
-                                                                                    <li>Mind-blowing templates to wow your customers!</li>
-                                                                                    <li>Google SEO tools to get your new website out there!</li>
-                                                                                    <li>Support for up to 50mb of media site-wide!</li>
-                                                                                </ul>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                    <table class="column">
-                                                                        <tr>
-                                                                            <td>
-                                                                                <ul class="sales-paragraph" 
-                                                                                style="padding: 0 32px;color: #109D2C;">
-                                                                                    <li>Mind-blowing templates to wow your customers!</li>
-                                                                                    <li>Google SEO tools to get your new website out there!</li>
-                                                                                    <li>Support for up to 50mb of media site-wide!</li>
-                                                                                </ul>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                            <div>
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td style="padding: 20px;">
+                                                            <table width="100%">
+                                                                <tr>                                                                    
+                                                                    <td style="display: flex;justify-content:space-around;">
+                                                                        <table class="features" width="480px">
+                                                                            <tr>
+                                                                                <th style="text-align: left;font-size: 28px;padding: 16px 12px;">Features</th>
+                                                                                <th style="text-align: right;">
+                                                                                    <img src="images/free-logo-blue.png" alt=""
+                                                                                    width="50px">
+                                                                                </th>
+                                                                                <th style="text-align: right;">Pro</th>
+                                                                            </tr> 
+                                                                            <tr>
+                                                                                <td>Access to Compilr help forums</td>
+                                                                                <td style="text-align: right;">
+                                                                                    <img src="images/check-mark-icon.png" alt=""
+                                                                                    width="30px">
+                                                                                </td>
+                                                                                <td style="text-align: right;">
+                                                                                    <img src="images/check-mark-icon.png" alt=""
+                                                                                    width="30px">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Google search analytics data</td>
+                                                                                <td style="text-align: right;">
+                                                                                    <img src="images/check-mark-icon.png" alt=""
+                                                                                    width="30px">
+                                                                                </td>
+                                                                                <td style="text-align: right;">
+                                                                                    <img src="images/check-mark-icon.png" alt=""
+                                                                                    width="30px">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>24/7 telephone and email support</td>
+                                                                                <td style="text-align: right;"> 
+                                                                                    <img src="images/x-icon.png" alt=""
+                                                                                    width="30px">
+                                                                                </td>
+                                                                                <td style="text-align: right;">
+                                                                                    <img src="images/check-mark-icon.png" alt=""
+                                                                                    width="30px">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Advanced Google SEO tools</td>
+                                                                                <td style="text-align: right;"> 
+                                                                                    <img src="images/x-icon.png" alt=""
+                                                                                    width="30px">
+                                                                                </td>
+                                                                                <td style="text-align: right;">
+                                                                                    <img src="images/check-mark-icon.png" alt=""
+                                                                                    width="30px">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Custom script embed support</td>
+                                                                                <td style="text-align: right;"> 
+                                                                                    <img src="images/x-icon.png" alt=""
+                                                                                    width="30px">
+                                                                                </td>
+                                                                                <td style="text-align: right;">
+                                                                                    <img src="images/check-mark-icon.png" alt=""
+                                                                                    width="30px">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Templates</td>
+                                                                                <td style="text-align: right;">100's</td>
+                                                                                <td style="color: #16A04C;text-align: right;"><strong>10,000+</strong></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Media Storage</td>
+                                                                                <td style="text-align: right;">50mb</td>
+                                                                                <td style="color: #16A04C;text-align: right;"><strong>500mb</strong></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Domain Name/Hosting</td>
+                                                                                <td style="text-align: right;">$15/month</td>
+                                                                                <td style="color: #16A04C;text-align: right;"><strong>Included</strong></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Pricing</td>
+                                                                                <td style="text-align: right;">Free</td>
+                                                                                <td style="color: #16A04C;text-align: right;"><strong>$40/month</strong></td>
+                                                                            </tr>                                                                            
+                                                                        </table>                                                                   
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
                                         </td>
                                     </tr>
                                 </table>                                
