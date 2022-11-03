@@ -37,7 +37,6 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     .main {
         background-color: #ECECEC;
         margin: 0 auto;
-        width: 100%;
         max-width: 600px;
         border-spacing: 0;
         font-family: 'Montserrat', sans-serif;
@@ -46,6 +45,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     .three-column {
         text-align: center;
         font-size: 0;
+        padding: 15px 0 25px;
     }
     .three-column .column {
         width: 100%;
@@ -55,13 +55,15 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         display: inline-block;
         vertical-align: top;
         text-align: center;
+        margin: 0 auto;
     }
+
     .two-column {
         text-align: center;
         font-size: 0;
         padding: 30px 0;
-        display: flex;
-        justify-content: space-around;
+        display: inline-block;
+        /* justify-content: space-around; */
     }
     .two-column .column {
         width: 100%;
@@ -77,15 +79,14 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     }
     .nav-bar {
         background-color: #1B8FE0;
-        padding: 24px 32px;
-        display: flex;
-        justify-content: space-between;
+        display: inline-block;
+        width: 100%;
     }
+    
     #social-icons {
-        display: flex;
-        gap: 6px;
-        align-self: flex-end;
-        padding-bottom: 6px;
+        display: block;
+        float: right;
+        margin: auto 0;
     }
     .heading {
         padding: 14px;
@@ -114,13 +115,14 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         background-position: center;
         background-size: contain;
         position: relative;
+        display: inline-block;
+        width: 100%;
         max-width: 600px;
         max-height: 100%;        
         text-align: left;
-        font-size: 28px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        font-size: 28px;        
+        /* flex-direction: column;
+        justify-content: space-between; */
     }
     .banner-food {
         background-image: url('https://i.ibb.co/p4g1mkN/blue-cakeballs.jpg');
@@ -137,9 +139,9 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         background-color: #1B8FE0;
         color: #ECECEC;
         border-radius: 3px;
-        display: flex;
-        justify-content: center;
-        align-self: flex-end;
+        display: inline-block;
+        /* justify-content: center;
+        align-self: flex-end; */
         width: fit-content;
         margin: 0 auto 12px;
     }
@@ -151,9 +153,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         background-color: #ECECEC;
         color: #1B8FE0;
         border-radius: 3px;
-        display: flex;
-        justify-content: center;
-        align-self: flex-end;
+        display: block;
         width: fit-content;
         margin: 12px auto 12px;
     }
@@ -188,9 +188,9 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         font-weight: 300;
         line-height: 0.5em;
         text-align: left;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: inline-block;
+        /* justify-content: space-between;
+        align-items: center; */
     }
 </style>
 </head>
@@ -203,16 +203,18 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
             </tr>
             <!-- NAV BAR -->
             <tr>
-                <td>
-                    <table width="100%">
+                <td class="nav-bar">
+                    <table width="100%" style="padding: 16px 28px;"
                         <tr>
-                            <td>
-                                <!-- Compilr logo -->
-                                <div class="nav-bar">
+                            <div>
+                                <td>
+                                <!-- Compilr logo -->                                
                                     <div>
                                         <a href="#"><img src="https://i.ibb.co/8YmqmVd/compilr-logo.png" alt="Compilr"
                                             width="180px" title="Compilr"></a>
                                     </div>
+                                </td>
+                                <td>
                                     <!-- Social media icons -->
                                     <div id="social-icons">
                                         <a href="#"><img src="https://i.ibb.co/4Y0CP6R/facebook-icon.png" alt="Facebook link"
@@ -224,8 +226,8 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                                         <a href="#"><img src="https://i.ibb.co/N9hH93t/youtube-icon.png" alt="Facebook link"
                                             width="32px" title="Visit our Facebook page!"></a>
                                     </div>
-                                </div>
-                            </td>
+                                </td>
+                            </div>
                         </tr>
                     </table>
                 </td>
@@ -246,7 +248,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                                         Whatever you create...
                                     </p>
                                     <!-- CTA button -->
-                                    <a href="#" class="white-button"><span>See Real Customer Sites</span></a>
+                                    <a href="#" class="white-button" style="vertical-align: bottom;margin: 40% auto 0;"><span>See Real Customer Sites</span></a>
                                 </div>                                
                             </td>
                         </tr>
@@ -321,10 +323,9 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                                     <p class="heading" style="padding: 20px 24px;margin: 0;">
                                         Give your business the advantage online!
                                     </p>
-                                    <div style="display: flex;justify-content:center;
-                                    background-color: #ECECEC;padding: 8px 0;">
+                                    <div style="background-color: #ECECEC;padding: 8px 0;">
                                         <img src="https://i.ibb.co/vQ7vc8B/mountain-template.jpg" alt="Mountain"
-                                        width="520px" title="Check out that view!">
+                                        width="520px" title="Check out that view!" style="display: block;margin: 0 auto;">
                                     </div>                                    
                                     <!-- Template example images 
                                     <table width="100%">
@@ -383,7 +384,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                                                         <td style="padding: 20px;">
                                                             <table width="100%">
                                                                 <tr>                                                                    
-                                                                    <td style="display: flex;justify-content:space-around;">
+                                                                    <td style="display: block;margin: 0 auto;">
                                                                         <table class="features" width="480px">
                                                                             <tr>
                                                                                 <th style="text-align: left;font-size: 28px;padding: 16px 12px;">Features</th>
@@ -489,12 +490,12 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                 <td>
                     <table width="100%">
                         <tr>
-                            <td>
-                                <div style="background-color: #ECECEC;text-align: center;
-                                padding: 20px 0;">
-                                    <a href="#"><img src="https://i.ibb.co/yd2vYS1/compilr-logo-blue.png" alt="Compilr logo"
-                                        width="240px" title="Create your account today!"></a>
-                                </div>
+                            <td style="background-color: #ECECEC;text-align: center;
+                            padding: 20px 0;">
+                                <a href="#">
+                                    <img src="https://i.ibb.co/yd2vYS1/compilr-logo-blue.png" alt="Compilr logo"
+                                        width="240px" title="Create your account today!">
+                                </a>
                             </td>
                         </tr>
                     </table>
@@ -526,22 +527,36 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                 <td>
                     <table width="100%">
                         <tr>
-                            <td>
-                                <div class="footer">
-                                    <div>
-                                        <p>5678 Main Street</p>
-                                        <p>Dallas, TX 75123</p>
-                                    </div>
-                                    <div><a href="#"><img src="https://i.ibb.co/yd2vYS1/compilr-logo-blue.png" alt="Compilr logo"
-                                        width="120px" title="Visit our website!"></a>
-                                    </div>
-                                    <div>Contact us: <em>questions@compilr.com</em></div>
-                                </div>
+                            <td class="three-column">
+                                <table class="column" style="font-size: 10px;
+                                color: #1B8FE0;">
+                                    <tr>
+                                        <td>
+                                            5678 Main Street Dallas, TX 75123
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td>
+                                            <img src="https://i.ibb.co/yd2vYS1/compilr-logo-blue.png" 
+                                            alt="Compilr logo" width="120" title="Visit our website!">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column" style="font-size: 10px;
+                                color: #1B8FE0;">
+                                    <tr>
+                                        <td style="margin-left: 19px;">
+                                            Contact us: <em>questions@compilr.com</em>
+                                        </td>
+                                    </tr>
+                                </table>                                
                             </td>
                         </tr>
                     </table>
                 </td>
-            </tr>
+            </tr>            
         </table>
     </center>    
 </body>
