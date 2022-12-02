@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Modern HTML Email Template</title>
+<title>Compilr Email Template</title>
 <!-- FONT LINK - Montserrat -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +13,20 @@
 wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
     * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            border-collapse: collapse;            
-    }
-    body {
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border-collapse: collapse;            
+    }
+    body {        
+        font-family: 'Montserrat', sans-serif;
         background-color: #CECECE;
+        color: #ECECEC;
     }
     table {
         border-spacing: 0;
+        width: 100%;
+        max-width: 600px;
     }
     td {
         padding: 0;
@@ -36,24 +39,21 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         text-decoration: none;
         display: inline-block;
     }
-    .wrapper {
+    .main {
         table-layout: fixed;
         background-color: #323232;
         padding-bottom: 60px;
-    }
-    .main {
+        max-width: 600px;
         background-color: #ECECEC;
-        margin: 0 auto;
         width: 100%;
         max-width: 600px;
-        font-family: 'Montserrat', sans-serif;
-        color: #ECECEC;
-        display: inline-block;
     }
     .three-column {
+        table-layout: fixed;
         text-align: center;
         font-size: 0;
         padding: 15px 0 25px;
+        max-width: 600px;
     }
     .three-column .column {
         width: 100%;
@@ -65,8 +65,8 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         text-align: center;
         margin: 0 auto;
     }
-
     .two-column {
+        table-layout: fixed;
         text-align: center;
         font-size: 0;
         padding: 30px 0;
@@ -87,8 +87,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         width: 100%;
         padding: 10px 0 0;
         height: auto;
-        min-height: 2px;
-        background-color: #ECECEC;
+        min-height: 2px;        
     }
     .nav-bar {
         background-color: #1B8FE0;
@@ -106,27 +105,26 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         height: fit-content;
     }    
     #social-icons {
-        display: block;
+        display: table;
         float: left;
         width: 300px;
-    }
-    #social-icons-content {
         text-align: right;
     }
+    /* #social-icons > tr, td {
+        width: 300px;
+    } */
     /* Resize all social icons */
     .social-icon {
-        display: inline-block;
         width: 100%;
         max-width: 32px;
-        text-align: right;
     }
     .heading {
-        padding: 3vw 0;
+        padding: 20px 0;
         width: 100%;
         font-size: 1.6rem;
         font-weight: 600;
         background-color:#1B8FE0;
-        display: block;
+        display: table;
         text-align: center;
     }
     .sales-heading {
@@ -135,6 +133,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         padding: 12px 0;
         text-align: center;
         margin: 0 auto;
+        
     }
     .sales-paragraph {
         font-size: 14px;
@@ -164,14 +163,13 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         font-weight: 600;
         text-align: center;
         background-color: #1B8FE0;
-        color: #ECECEC;
+        
         border-radius: 3px;
         display: inline-block;
         width: fit-content;
         margin: 0 auto 12px;
     }
-    .white-button {
-        
+    .white-button {        
         padding: 1rem 1.9rem;
         font-size: 1.3rem;
         font-weight: 600;
@@ -195,11 +193,10 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     .features th, .features td {
         border: 0;
         padding: 8px 12px;
-    }
-    
+    }    
     .call-to-action {
         background-color: #1B8FE0;
-        color: #ECECEC;
+        
         padding: 24px 40px;
         font-size: 16px;
         font-weight: 400;
@@ -207,7 +204,6 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         text-align: center;
     }
     .footer {
-        background-color: #ECECEC;
         color: #1B8FE0;
         padding: 10px 24px;
         font-size: 12px;
@@ -221,388 +217,377 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </style>
 </head>
 <body>
-    <center class="wrapper">
-        <table class="main">
-            <!-- PADDING BAR -->
-            <tr>
-                <td>
-                    <table class="padding-bar">
-                        <tr>
-                            <td></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- NAV BAR -->
-            <tr>
-                <td>
-                    <table class="nav-bar">
-                        <tr>
-                            <td>
-                            <!-- Compilr logo -->                                
-                                <table id="nav-bar-logo">
-                                    <tr>
-                                        <td>
-                                            <a href="#"><img src="https://i.ibb.co/8YmqmVd/compilr-logo.png" alt="Compilr" title="Compilr"></a>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table id="social-icons">
-                                    <tr>
-                                        <td>
-                                            <table id="social-icons-content">
-                                                <tr>
-                                                    <td>
-                                                        <a href="#"><img src="https://i.ibb.co/4Y0CP6R/facebook-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!"></a>
-                                                        <a href="#"><img src="https://i.ibb.co/dtp0pJ6/twitter-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!"></a>
-                                                        <a href="#"><img src="https://i.ibb.co/0h3z9rf/instagram-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!"></a>
-                                                        <a href="#"><img src="https://i.ibb.co/N9hH93t/youtube-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!"></a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- PADDING BAR -->
-            <tr>
-                <td class="padding-bar"></td>
-            </tr>
-            <!-- BANNER - RESTAURANT -->
-            <tr>
-                <td>
-                    <table width="100%">
-                        <tr>
-                            <!-- Heading - whatever you create -->
-                            <td>
-                                <table class="heading">
-                                    <tr>
-                                        <td>
-                                            Whatever you create...
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table class="banner-food">
-                                    <tr>
-                                        <td>
-                                            <a href="#" class="white-button"><span>See Real Customer Sites</span></a>
-                                        </td>
-                                    </tr>
-                                </table>                                
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- 3 ICONS - DISCOVER STANDOUT SELL -->
-            <tr>
-                <td>
-                    <table width="100%">
-                        <tr>
-                            <td style="background-color: #1B8FE0;padding: 32px 0;">
-                                <table class="three-column">
-                                    <tr>
-                                        <td>
-                                            <table class="column">
-                                                <tr>
-                                                    <td>
-                                                        <a href="#"><img src="https://i.ibb.co/x1GYTyZ/magnifying-glass-icon.png" alt="Discover"
-                                                            width="50" title="Help your business be discovered!"></a>
-                                                        <p class="sales-heading">Visibility</p>
-                                                        <p class="sales-paragraph"><strong>Google SEO tools</strong>, and <strong>media-
-                                                                centric layouts</strong> that put your creations front and center!
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <table class="column">
-                                                <tr>
-                                                    <td>
-                                                        <a href="#"><img src="https://i.ibb.co/KxsTH1T/star-icon.png" alt="Stand Out"
-                                                            width="50" title="Help your site stand out from the pack!"></a>
-                                                        <p class="sales-heading">Stand Out</p>
-                                                        <p class="sales-paragraph">With <strong>thousands of cutting edge templates,</strong> your 
-                                                            site will be as outstanding as your products!
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <table class="column">
-                                                <tr>
-                                                    <td>
-                                                        <a href="#"><img src="https://i.ibb.co/DC2bsjh/sell-icon.png" alt="Discover"
-                                                            width="50" title="Help your business be discovered!"></a>
-                                                        <p class="sales-heading">Sales</p>
-                                                        <p class="sales-paragraph">Our <strong>e-commerce widgets</strong> will allow you
-                                                             to take total control of your online storefront!
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- PADDING BAR -->
-            <tr>
-                <td class="padding-bar"></td>
-            </tr>
-            <!-- BANNER - JEWELRY -->
-            <tr>
-                <td>
-                    <table width="100%">
-                        <tr>
-                            <!-- Heading -->
-                            <td style="background-color: #ECECEC;">
-                                <div class="banner-jewelry">
-                                    <p class="heading" style="padding: 20px 24px;margin: 0;">
-                                        Give your business the advantage online!
-                                    </p>
-                                    <div style="background-color: #ECECEC;padding: 8px 0;">
-                                        <img src="https://i.ibb.co/vQ7vc8B/mountain-template.jpg" alt="Mountain"
-                                        width="520px" title="Check out that view!" style="display: block;margin: 0 auto;">
-                                    </div>                                    
-                                    <!-- Template example images 
-                                    <table width="100%">
-                                        <tr>
-                                            <td style="display: flex;justify-content: space-around;
-                                            align-items: center;">
-                                                <div style="padding: 10px;height: 159px;
-                                                background-color: #ECECEC;">
-                                                7px was being added to the height of these divs, and I 
-                                                couldn't figure out why. Therefore, I manually set the 
-                                                height of each div to 141px (to match the height of each image). 
-                                                    <img src="images/vacation-template.jpg" 
-                                                    alt="Vacation" width="260" title="Vacation">
-                                                </div>
-                                                <div style="padding: 20px 10px;height: 136px;
-                                                background-color: #ECECEC;">
-                                                    <img src="images/real-estate-template.jpg" 
-                                                    alt="Vacation" width="260" title="Vacation">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    CTA button -->
-                                    <a href="#" class="white-button"><span>Browse Our Templates</span></a>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- PADDING BAR -->
-            <tr>
-                <td class="padding-bar"></td>
-            </tr>
-            <!-- FREE VS PRO FEATURES -->
-            <tr>
-                <td>
-                    <table width="100%">
-                        <tr>
-                            <td style="background-color: #1B8FE0;padding: 20px 0;">
+    <table class="main">
+        <!-- PADDING BAR -->
+        <tr>
+            <td>
+                <table class="padding-bar">
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- NAV BAR -->
+        <tr>
+            <td>
+                <table class="nav-bar">
+                    <tr>
+                        <td>
+                        <!-- Compilr logo -->                                
+                            <table id="nav-bar-logo">
+                                <tr>
+                                    <td>
+                                        <a href="#"><img src="https://i.ibb.co/8YmqmVd/compilr-logo.png" alt="Compilr" title="Compilr"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table id="social-icons">
+                                <tr>
+                                    <td style="text-align: right;">
+                                        <img src="https://i.ibb.co/4Y0CP6R/facebook-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!">
+                                        <img src="https://i.ibb.co/dtp0pJ6/twitter-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!">
+                                        <img src="https://i.ibb.co/0h3z9rf/instagram-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!">
+                                        <img src="https://i.ibb.co/N9hH93t/youtube-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!">
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- PADDING BAR -->
+        <tr>
+            <td class="padding-bar"></td>
+        </tr>
+        <!-- BANNER - RESTAURANT -->
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <!-- Heading - whatever you create -->
+                        <td class="heading">
+                            Whatever you create...
+                        </td>
+                            <table class="banner-food">
+                                <tr>
+                                    <td>
+                                        <a href="#" class="white-button"><span>See Real Customer Sites</span></a>
+                                    </td>
+                                </tr>
+                            </table>                                
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- 3 ICONS - DISCOVER STANDOUT SELL -->
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td style="background-color: #1B8FE0;padding: 32px 0;">
+                            <table class="three-column">
+                                <tr>
+                                    <td>
+                                        <table class="column">
+                                            <tr>
+                                                <td>
+                                                    <a href="#"><img src="https://i.ibb.co/x1GYTyZ/magnifying-glass-icon.png" alt="Discover"
+                                                        width="50" title="Help your business be discovered!"></a>
+                                                    <p class="sales-heading">Visibility</p>
+                                                    <p class="sales-paragraph"><strong>Google SEO tools</strong>, and <strong>media-
+                                                            centric layouts</strong> that put your creations front and center!
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="column">
+                                            <tr>
+                                                <td>
+                                                    <a href="#"><img src="https://i.ibb.co/KxsTH1T/star-icon.png" alt="Stand Out"
+                                                        width="50" title="Help your site stand out from the pack!"></a>
+                                                    <p class="sales-heading">Stand Out</p>
+                                                    <p class="sales-paragraph">With <strong>thousands of cutting edge templates,</strong> your 
+                                                        site will be as outstanding as your products!
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="column">
+                                            <tr>
+                                                <td>
+                                                    <a href="#"><img src="https://i.ibb.co/DC2bsjh/sell-icon.png" alt="Discover"
+                                                        width="50" title="Help your business be discovered!"></a>
+                                                    <p class="sales-heading">Sales</p>
+                                                    <p class="sales-paragraph">Our <strong>e-commerce widgets</strong> will allow you
+                                                            to take total control of your online storefront!
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- PADDING BAR -->
+        <tr>
+            <td class="padding-bar"></td>
+        </tr>
+        <!-- BANNER - JEWELRY -->
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <!-- Heading -->
+                        <td>
+                            <div class="banner-jewelry">
+                                <p class="heading" style="padding: 20px 24px;margin: 0;">
+                                    Give your business the advantage online!
+                                </p>
+                                <div style="background-color: #ECECEC;padding: 8px 0;">
+                                    <img src="https://i.ibb.co/vQ7vc8B/mountain-template.jpg" alt="Mountain"
+                                    width="520px" title="Check out that view!" style="display: block;margin: 0 auto;">
+                                </div>                                    
+                                <!-- Template example images 
                                 <table width="100%">
                                     <tr>
-                                        <td>
-                                            <p class="heading" style="margin-bottom: 0;">Which Compilr Site Is Right For You?</p>
-                                            <!-- <div style="display: flex;justify-content:space-around;
-                                            padding: 20px 32px;gap: 40px;">                                                               
-                                                <a href="#"><img src="images/free logo.png" alt="Free Account"
-                                                    width="160" title="Make a free account today!"></a>
-                                                <a href="#"><img src="images/free logo.png" alt="Free Account"
-                                                    width="160" title="Make a free account today!"></a>
-                                            </div> -->
-                                            <!-- Features list - white background -->
-                                            <div>
-                                                <table width="100%">
-                                                    <tr>
-                                                        <td style="padding: 20px;">
-                                                            <table width="100%">
-                                                                <tr>                                                                    
-                                                                    <td style="display: block;margin: 0 auto;">
-                                                                        <table class="features" width="480px">
-                                                                            <tr>
-                                                                                <th style="text-align: left;font-size: 28px;padding: 16px 12px;">Features</th>
-                                                                                <th style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/QChrmNQ/free-logo-blue.png" alt=""
-                                                                                    width="50px">
-                                                                                </th>
-                                                                                <th style="text-align: right;"><img src="images/pro-icon.png" alt=""
-                                                                                    width="75px"></th>
-                                                                            </tr> 
-                                                                            <tr>
-                                                                                <td>Access to Compilr help forums</td>
-                                                                                <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
-                                                                                </td>
-                                                                                <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Google search analytics data</td>
-                                                                                <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
-                                                                                </td>
-                                                                                <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>24/7 telephone and email support</td>
-                                                                                <td style="text-align: right;"> 
-                                                                                    <img src="https://i.ibb.co/NVt32xH/x-icon.png" alt=""
-                                                                                    width="30px">
-                                                                                </td>
-                                                                                <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Advanced Google SEO tools</td>
-                                                                                <td style="text-align: right;"> 
-                                                                                    <img src="https://i.ibb.co/NVt32xH/x-icon.png" alt=""
-                                                                                    width="30px">
-                                                                                </td>
-                                                                                <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Custom script embed support</td>
-                                                                                <td style="text-align: right;"> 
-                                                                                    <img src="https://i.ibb.co/NVt32xH/x-icon.png" alt=""
-                                                                                    width="30px">
-                                                                                </td>
-                                                                                <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Templates</td>
-                                                                                <td style="text-align: right;">100's</td>
-                                                                                <td style="color: #16A04C;text-align: right;"><strong>10,000+</strong></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Media Storage</td>
-                                                                                <td style="text-align: right;">50mb</td>
-                                                                                <td style="color: #16A04C;text-align: right;"><strong>500mb</strong></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Domain Name/Hosting</td>
-                                                                                <td style="text-align: right;">$15/month</td>
-                                                                                <td style="color: #16A04C;text-align: right;"><strong>Included</strong></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Pricing</td>
-                                                                                <td style="text-align: right;">Free</td>
-                                                                                <td style="color: #16A04C;text-align: right;"><strong>$40/month</strong></td>
-                                                                            </tr>                                                                            
-                                                                        </table>                                                                   
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </table>
+                                        <td style="display: flex;justify-content: space-around;
+                                        align-items: center;">
+                                            <div style="padding: 10px;height: 159px;
+                                            background-color: #ECECEC;">
+                                            7px was being added to the height of these divs, and I 
+                                            couldn't figure out why. Therefore, I manually set the 
+                                            height of each div to 141px (to match the height of each image). 
+                                                <img src="images/vacation-template.jpg" 
+                                                alt="Vacation" width="260" title="Vacation">
+                                            </div>
+                                            <div style="padding: 20px 10px;height: 136px;
+                                            background-color: #ECECEC;">
+                                                <img src="images/real-estate-template.jpg" 
+                                                alt="Vacation" width="260" title="Vacation">
                                             </div>
                                         </td>
                                     </tr>
-                                </table>                                
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- COMPILR LOGO -->
-            <tr>
-                <td>
-                    <table width="100%">
-                        <tr>
-                            <td style="background-color: #ECECEC;text-align: center;
-                            padding: 20px 0;">
-                                <a href="#">
-                                    <img src="https://i.ibb.co/yd2vYS1/compilr-logo-blue.png" alt="Compilr logo"
-                                        width="240px" title="Create your account today!">
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- CALL TO ACTION -->
-            <tr>
-                <td>
-                    <table class="call-to-action" width="100%">
-                        <tr>
-                            <td>
-                                <p style="font-size: 28px;font-weight: 600;">
-                                    Get Started Today!
-                                </p>
-                                <p>Take the first step towards maximizing your business! 
-                                    We'll be with you every step of the way!
-                                </p>
-                                <!-- CTA button -->
-                                <div style="padding: 20px 0;">
-                                    <a href="#" class="white-button"><span>Create Your Account</span></a>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- FOOTER -->
-            <tr>
-                <td>
-                    <table width="100%">
-                        <tr>
-                            <td class="three-column">
-                                <table class="column" style="font-size: 10px;
-                                color: #1B8FE0;">
-                                    <tr>
-                                        <td>
-                                            5678 Main Street Dallas, TX 75123
-                                        </td>
-                                    </tr>
                                 </table>
-                                <table class="column">
-                                    <tr>
-                                        <td>
-                                            <img src="https://i.ibb.co/yd2vYS1/compilr-logo-blue.png" 
-                                            alt="Compilr logo" width="120" title="Visit our website!">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table class="column" style="font-size: 10px;
-                                color: #1B8FE0;">
-                                    <tr>
-                                        <td style="margin-left: 19px;">
-                                            Contact us: <em>questions@compilr.com</em>
-                                        </td>
-                                    </tr>
-                                </table>                                
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>            
-        </table>
-    </center>    
+                                CTA button -->
+                                <a href="#" class="white-button"><span>Browse Our Templates</span></a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- PADDING BAR -->
+        <tr>
+            <td class="padding-bar"></td>
+        </tr>
+        <!-- FREE VS PRO FEATURES -->
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td style="background-color: #1B8FE0;padding: 20px 0;">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p class="heading" style="margin-bottom: 0;">Which Compilr Site Is Right For You?</p>
+                                        <!-- <div style="display: flex;justify-content:space-around;
+                                        padding: 20px 32px;gap: 40px;">                                                               
+                                            <a href="#"><img src="images/free logo.png" alt="Free Account"
+                                                width="160" title="Make a free account today!"></a>
+                                            <a href="#"><img src="images/free logo.png" alt="Free Account"
+                                                width="160" title="Make a free account today!"></a>
+                                        </div> -->
+                                        <!-- Features list - white background -->
+                                        <div>
+                                            <table>
+                                                <tr>
+                                                    <td style="padding: 20px;">
+                                                        <table>
+                                                            <tr>                                                                    
+                                                                <td style="display: block;margin: 0 auto;">
+                                                                    <table class="features" width="480px">
+                                                                        <tr>
+                                                                            <th style="text-align: left;font-size: 28px;padding: 16px 12px;">Features</th>
+                                                                            <th style="text-align: right;">
+                                                                                <img src="https://i.ibb.co/QChrmNQ/free-logo-blue.png" alt=""
+                                                                                width="50px">
+                                                                            </th>
+                                                                            <th style="text-align: right;"><img src="images/pro-icon.png" alt=""
+                                                                                width="75px"></th>
+                                                                        </tr> 
+                                                                        <tr>
+                                                                            <td>Access to Compilr help forums</td>
+                                                                            <td style="text-align: right;">
+                                                                                <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
+                                                                                width="30px">
+                                                                            </td>
+                                                                            <td style="text-align: right;">
+                                                                                <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
+                                                                                width="30px">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Google search analytics data</td>
+                                                                            <td style="text-align: right;">
+                                                                                <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
+                                                                                width="30px">
+                                                                            </td>
+                                                                            <td style="text-align: right;">
+                                                                                <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
+                                                                                width="30px">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>24/7 telephone and email support</td>
+                                                                            <td style="text-align: right;"> 
+                                                                                <img src="https://i.ibb.co/NVt32xH/x-icon.png" alt=""
+                                                                                width="30px">
+                                                                            </td>
+                                                                            <td style="text-align: right;">
+                                                                                <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
+                                                                                width="30px">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Advanced Google SEO tools</td>
+                                                                            <td style="text-align: right;"> 
+                                                                                <img src="https://i.ibb.co/NVt32xH/x-icon.png" alt=""
+                                                                                width="30px">
+                                                                            </td>
+                                                                            <td style="text-align: right;">
+                                                                                <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
+                                                                                width="30px">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Custom script embed support</td>
+                                                                            <td style="text-align: right;"> 
+                                                                                <img src="https://i.ibb.co/NVt32xH/x-icon.png" alt=""
+                                                                                width="30px">
+                                                                            </td>
+                                                                            <td style="text-align: right;">
+                                                                                <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
+                                                                                width="30px">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Templates</td>
+                                                                            <td style="text-align: right;">100's</td>
+                                                                            <td style="color: #16A04C;text-align: right;"><strong>10,000+</strong></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Media Storage</td>
+                                                                            <td style="text-align: right;">50mb</td>
+                                                                            <td style="color: #16A04C;text-align: right;"><strong>500mb</strong></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Domain Name/Hosting</td>
+                                                                            <td style="text-align: right;">$15/month</td>
+                                                                            <td style="color: #16A04C;text-align: right;"><strong>Included</strong></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Pricing</td>
+                                                                            <td style="text-align: right;">Free</td>
+                                                                            <td style="color: #16A04C;text-align: right;"><strong>$40/month</strong></td>
+                                                                        </tr>                                                                            
+                                                                    </table>                                                                   
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>                                
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- COMPILR LOGO -->
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td style="background-color: #ECECEC;text-align: center;
+                        padding: 20px 0;">
+                            <a href="#">
+                                <img src="https://i.ibb.co/yd2vYS1/compilr-logo-blue.png" alt="Compilr logo"
+                                    width="240px" title="Create your account today!">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- CALL TO ACTION -->
+        <tr>
+            <td>
+                <table class="call-to-action">
+                    <tr>
+                        <td>
+                            <p style="font-size: 28px;font-weight: 600;">
+                                Get Started Today!
+                            </p>
+                            <p>Take the first step towards maximizing your business! 
+                                We'll be with you every step of the way!
+                            </p>
+                            <!-- CTA button -->
+                            <div style="padding: 20px 0;">
+                                <a href="#" class="white-button"><span>Create Your Account</span></a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- FOOTER -->
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td class="three-column">
+                            <table class="column" style="font-size: 10px;
+                            color: #1B8FE0;">
+                                <tr>
+                                    <td>
+                                        5678 Main Street Dallas, TX 75123
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="column">
+                                <tr>
+                                    <td>
+                                        <img src="https://i.ibb.co/yd2vYS1/compilr-logo-blue.png" 
+                                        alt="Compilr logo" width="120" title="Visit our website!">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="column" style="font-size: 10px;
+                            color: #1B8FE0;">
+                                <tr>
+                                    <td style="margin-left: 19px;">
+                                        Contact us: <em>questions@compilr.com</em>
+                                    </td>
+                                </tr>
+                            </table>                                
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>            
+    </table>    
 </body>
 </html>
