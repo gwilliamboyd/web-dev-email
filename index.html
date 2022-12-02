@@ -12,6 +12,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:
 wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-collapse: collapse;            
+    }
     body {
         margin: 0;
         background-color: #CECECE;
@@ -24,12 +30,13 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     }
     img {
         border: 0;
+        max-width: 100%;
     }
     a {
         text-decoration: none;
+        display: inline-block;
     }
     .wrapper {
-        width: 100%;
         table-layout: fixed;
         background-color: #323232;
         padding-bottom: 60px;
@@ -37,10 +44,11 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     .main {
         background-color: #ECECEC;
         margin: 0 auto;
+        width: 100%;
         max-width: 600px;
-        border-spacing: 0;
         font-family: 'Montserrat', sans-serif;
         color: #ECECEC;
+        display: inline-block;
     }
     .three-column {
         text-align: center;
@@ -74,28 +82,52 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         text-align: center;
     }
     .padding-bar {
-        height: 10px;
+        display: block;
+        max-width: 600px;
+        width: 100%;
+        padding: 10px 0 0;
+        height: auto;
+        min-height: 2px;
         background-color: #ECECEC;
     }
     .nav-bar {
         background-color: #1B8FE0;
-        display: inline-block;
         width: 100%;
+        display: inline-block;
+        text-align: left;
     }
-    
+    #nav-bar-logo {
+        display: block;
+        float: left;
+        width: 300px;
+    }
+    #nav-bar-logo > a, img {
+        max-width: 180px;
+        height: fit-content;
+    }    
     #social-icons {
         display: block;
-        float: right;
-        margin: auto 0;
+        float: left;
+        width: 300px;
+    }
+    #social-icons-content {
+        text-align: right;
+    }
+    /* Resize all social icons */
+    .social-icon {
+        display: inline-block;
+        width: 100%;
+        max-width: 32px;
+        text-align: right;
     }
     .heading {
-        padding: 14px;
-        font-size: 26px;
+        padding: 3vw 0;
+        width: 100%;
+        font-size: 1.6rem;
         font-weight: 600;
         background-color:#1B8FE0;
-        color: #ECECEC;
+        display: block;
         text-align: center;
-        margin-top: 0;
     }
     .sales-heading {
         font-size: 28px;
@@ -115,18 +147,13 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         background-position: center;
         background-size: contain;
         position: relative;
-        display: inline-block;
+        display: block;
         width: 100%;
         max-width: 600px;
-        max-height: 100%;        
-        text-align: left;
-        font-size: 28px;        
-        /* flex-direction: column;
-        justify-content: space-between; */
     }
     .banner-food {
         background-image: url('https://i.ibb.co/0YwvBhc/blue-cakeballs.jpg');
-        height: 400px;
+        height: 400px;        
     }
     .banner-jewelry {
         background-color: #1B8FE0;        
@@ -140,22 +167,21 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         color: #ECECEC;
         border-radius: 3px;
         display: inline-block;
-        /* justify-content: center;
-        align-self: flex-end; */
         width: fit-content;
         margin: 0 auto 12px;
     }
     .white-button {
-        padding: 16px 30px;
-        font-size: 22px;
+        
+        padding: 1rem 1.9rem;
+        font-size: 1.3rem;
         font-weight: 600;
         text-align: center;
         background-color: #ECECEC;
         color: #1B8FE0;
         border-radius: 3px;
-        display: block;
+        display: block;        
+        margin: 0 auto;
         width: fit-content;
-        margin: 12px auto 12px;
     }
     .features {
         background-color: #ECECEC;
@@ -199,35 +225,46 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <table class="main">
             <!-- PADDING BAR -->
             <tr>
-                <td class="padding-bar"></td>
+                <td>
+                    <table class="padding-bar">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
             <!-- NAV BAR -->
             <tr>
-                <td class="nav-bar">
-                    <table width="100%" style="padding: 16px 28px;"
+                <td>
+                    <table class="nav-bar">
                         <tr>
-                            <div>
-                                <td>
-                                <!-- Compilr logo -->                                
-                                    <div>
-                                        <a href="#"><img src="https://i.ibb.co/8YmqmVd/compilr-logo.png" alt="Compilr"
-                                            width="180px" title="Compilr"></a>
-                                    </div>
-                                </td>
-                                <td>
-                                    <!-- Social media icons -->
-                                    <div id="social-icons">
-                                        <a href="#"><img src="https://i.ibb.co/4Y0CP6R/facebook-icon.png" alt="Facebook link"
-                                            width="32px" title="Visit our Facebook page!"></a>
-                                        <a href="#"><img src="https://i.ibb.co/dtp0pJ6/twitter-icon.png" alt="Facebook link"
-                                            width="32px" title="Visit our Facebook page!"></a>
-                                        <a href="#"><img src="https://i.ibb.co/0h3z9rf/instagram-icon.png" alt="Facebook link"
-                                            width="32px" title="Visit our Facebook page!"></a>
-                                        <a href="#"><img src="https://i.ibb.co/N9hH93t/youtube-icon.png" alt="Facebook link"
-                                            width="32px" title="Visit our Facebook page!"></a>
-                                    </div>
-                                </td>
-                            </div>
+                            <td>
+                            <!-- Compilr logo -->                                
+                                <table id="nav-bar-logo">
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://i.ibb.co/8YmqmVd/compilr-logo.png" alt="Compilr" title="Compilr"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table id="social-icons">
+                                    <tr>
+                                        <td>
+                                            <table id="social-icons-content">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="https://i.ibb.co/4Y0CP6R/facebook-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!"></a>
+                                                        <a href="#"><img src="https://i.ibb.co/dtp0pJ6/twitter-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!"></a>
+                                                        <a href="#"><img src="https://i.ibb.co/0h3z9rf/instagram-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!"></a>
+                                                        <a href="#"><img src="https://i.ibb.co/N9hH93t/youtube-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
                         </tr>
                     </table>
                 </td>
@@ -243,13 +280,20 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                         <tr>
                             <!-- Heading - whatever you create -->
                             <td>
-                                <div class="banner-food">
-                                    <p class="heading">
-                                        Whatever you create...
-                                    </p>
-                                    <!-- CTA button -->
-                                    <a href="#" class="white-button" style="vertical-align: bottom;margin: 40% auto 0;"><span>See Real Customer Sites</span></a>
-                                </div>                                
+                                <table class="heading">
+                                    <tr>
+                                        <td>
+                                            Whatever you create...
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="banner-food">
+                                    <tr>
+                                        <td>
+                                            <a href="#" class="white-button"><span>See Real Customer Sites</span></a>
+                                        </td>
+                                    </tr>
+                                </table>                                
                             </td>
                         </tr>
                     </table>
