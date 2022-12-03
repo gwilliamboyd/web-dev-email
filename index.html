@@ -128,10 +128,10 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         max-width: 32px;
     }
     .heading {
-        padding: 20px 0;
+        padding: 3.33vmin 0;
         width: 100%;
         /* sets max font size to 1.6rem, until then, 4.27vmin */
-        font-size: min(4.27vmin, 1.6rem) ;
+        font-size: min(4.27vmin, 1.6rem);
         font-weight: 600;
         background-color:#1B8FE0;
         display: block;
@@ -165,6 +165,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         display: block;
         width: 100%;
         max-width: 600px;
+        padding-bottom: min(2vmin, 12px);
         background-color: #1B8FE0;
         text-align: center;        
     }
@@ -205,44 +206,52 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     .features {
         background-color: #ECECEC;
         color: #1B8FE0;
-        font-size: 16px;
+        font-size: min(2.67vmin, 1rem);
         font-weight: 400;
         border: 0;
         margin: 0 auto;
-        padding: 4px 12px;
+        padding: 0.67vmin 2vmin;
         max-width: 480px;
-        width: 100%;
+        width: 80vmin;
     }
     .features th, .features td {
         border: 0;
-        padding: 8px 12px;
+        padding: 1.33vmin 2vmin;
     }
     #features-cell {
         text-align: left;
-        font-size: 5vmin;
+        font-size: min(5vmin, 1.6rem);
         /* padding: 16px 12px; vmin values below: */
         padding: 3.77vmin 2.9vmin;
     }
     #free-logo {
         max-width: 50px;
-        width: 100%;
+        width: 8.33vmin;
     }
     #pro-logo{
         max-width: 75px;
-        width: 100%;
+        width: 12.5vmin;
     }
     .check-mark-icon, .x-icon {
         max-width: 30px;
-        width: 100%;
+        width: 5vmin;
     }   
     .call-to-action {
-        background-color: #1B8FE0;
-        
-        padding: 24px 40px;
+        background-color: #1B8FE0;        
+        padding: 0 6.67vmin 4vmin;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.7em;
         text-align: center;
+    }
+    .cta-heading {
+        font-size: min(5.33vmin, 2rem);
+        font-weight: 600;
+        padding: 3.33vmin 0;
+    }
+    .cta-p {
+        font-size: min(2.67, 1rem);
+        padding-bottom: 5vmin;
     }
     .footer {
         color: #1B8FE0;
@@ -321,6 +330,15 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                                 <!-- CTA button -->
                                 <a href="#" class="white-button"><span>See Real Customer Sites</span></a>
                             </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="padding-bar">
+                        <tr>
+                            <td></td>
                         </tr>
                     </table>
                 </td>
@@ -530,20 +548,23 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
             </tr>
             <!-- CALL TO ACTION -->
             <tr>
-                <td>
-                    <table class="call-to-action">
+                <td class="call-to-action">
+                    <table>
+                        <tr>
+                            <td class="cta-heading">
+                                Get Started Today!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cta-p">
+                                Take the first step towards maximizing your business! 
+                                We'll be with you every step of the way!
+                            </td>
+                        </tr>
                         <tr>
                             <td>
-                                <p style="font-size: 28px;font-weight: 600;">
-                                    Get Started Today!
-                                </p>
-                                <p>Take the first step towards maximizing your business! 
-                                    We'll be with you every step of the way!
-                                </p>
                                 <!-- CTA button -->
-                                <div style="padding: 20px 0;">
-                                    <a href="#" class="white-button"><span>Create Your Account</span></a>
-                                </div>
+                                <a href="#" class="white-button"><span>Create Your Account</span></a>
                             </td>
                         </tr>
                     </table>
