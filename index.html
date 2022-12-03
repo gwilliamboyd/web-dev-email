@@ -55,14 +55,14 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         table-layout: fixed;
         text-align: center;
         font-size: 0;
-        padding: 15px 0 25px;
+        padding: 5.33vmin 0;
         max-width: 600px;
     }
     .three-column .column {
         width: 100%;
         max-width: 200px;
         font-size: 0;
-        padding: 0 4px;
+        padding: 3vmin 0.67vmin;
         display: inline-block;
         vertical-align: top;
         text-align: center;
@@ -96,38 +96,42 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         background-color: #1B8FE0;
         max-width: 600px;
         width: 100%;
+        padding: 2vmin 0;
         display: inline-block;
         text-align: left;
     }
     #nav-bar-logo {
         display: block;
         float: left;
+        height: 100%;
+        line-height: 100%;
+        padding-left: 2vmin;
         width: 50vmin;
         max-width: 300px;
     }
     #nav-bar-logo > a, img {
         max-width: 180px;
+        width: 30vmin;
         height: fit-content;
     }    
     #social-icons {
         display: table;
-        float: left;
         max-width: 300px;
         width: 50vmin;
+        margin-right: 2vmin;
         text-align: right;
+        vertical-align: middle;
     }
-    /* #social-icons > tr, td {
-        width: 300px;
-    } */
     /* Resize all social icons */
     .social-icon {
-        width: 100%;
+        width: 7vmin;
         max-width: 32px;
     }
     .heading {
         padding: 20px 0;
         width: 100%;
-        font-size: 1.6rem;
+        /* sets max font size to 1.6rem, until then, 4.27vmin */
+        font-size: min(4.27vmin, 1.6rem) ;
         font-weight: 600;
         background-color:#1B8FE0;
         display: block;
@@ -166,6 +170,9 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     .banner-travel > img {
         max-width: 520px;
         width: 100%;
+    }
+    .marketing-icon {
+        max-width: 60px;
     }
     .blue-button {
         padding: 12px 24px;
@@ -277,7 +284,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                             <td>
                                 <table id="social-icons">
                                     <tr>
-                                        <td style="text-align: right;">
+                                        <td>
                                             <img src="https://i.ibb.co/4Y0CP6R/facebook-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!">
                                             <img src="https://i.ibb.co/dtp0pJ6/twitter-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!">
                                             <img src="https://i.ibb.co/0h3z9rf/instagram-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!">
@@ -319,15 +326,14 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                 <td>
                     <table>
                         <tr>
-                            <td style="background-color: #1B8FE0;padding: 32px 0;">
+                            <td style="background-color: #1B8FE0;">
                                 <table class="three-column">
                                     <tr>
                                         <td>
                                             <table class="column">
                                                 <tr>
                                                     <td>
-                                                        <a href="#"><img src="https://i.ibb.co/x1GYTyZ/magnifying-glass-icon.png" alt="Discover"
-                                                            width="50" title="Help your business be discovered!"></a>
+                                                        <a href="#"><img src="https://i.ibb.co/x1GYTyZ/magnifying-glass-icon.png" class="marketing-icon" alt="Discover" title="Help your business be discovered!"></a>
                                                         <p class="sales-heading">Visibility</p>
                                                         <p class="sales-paragraph"><strong>Google SEO tools</strong>, and <strong>media-
                                                                 centric layouts</strong> that put your creations front and center!
@@ -338,8 +344,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                                             <table class="column">
                                                 <tr>
                                                     <td>
-                                                        <a href="#"><img src="https://i.ibb.co/KxsTH1T/star-icon.png" alt="Stand Out"
-                                                            width="50" title="Help your site stand out from the pack!"></a>
+                                                        <a href="#"><img src="https://i.ibb.co/KxsTH1T/star-icon.png" class="marketing-icon" alt="Stand Out" title="Help your site stand out from the pack!"></a>
                                                         <p class="sales-heading">Stand Out</p>
                                                         <p class="sales-paragraph">With <strong>thousands of cutting edge templates,</strong> your 
                                                             site will be as outstanding as your products!
@@ -350,8 +355,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                                             <table class="column">
                                                 <tr>
                                                     <td>
-                                                        <a href="#"><img src="https://i.ibb.co/DC2bsjh/sell-icon.png" alt="Discover"
-                                                            width="50" title="Help your business be discovered!"></a>
+                                                        <a href="#"><img src="https://i.ibb.co/DC2bsjh/sell-icon.png" class="marketing-icon" alt="Discover" title="Help your business be discovered!"></a>
                                                         <p class="sales-heading">Sales</p>
                                                         <p class="sales-paragraph">Our <strong>e-commerce widgets</strong> will allow you
                                                                 to take total control of your online storefront!
