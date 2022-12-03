@@ -146,9 +146,6 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         text-align: left;
     }
     .banner-food {
-        background-position: center;
-        background-size: contain;
-        background-image: url('https://i.ibb.co/0YwvBhc/blue-cakeballs.jpg');
         height: 400px;
         position: relative;
         display: block;
@@ -199,11 +196,30 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         border: 0;
         margin: 0 auto;
         padding: 4px 12px;
+        max-width: 480px;
+        width: 100%;
     }
     .features th, .features td {
         border: 0;
         padding: 8px 12px;
-    }    
+    }
+    #features-cell {
+        text-align: left;
+        font-size: 1.8rem;
+        padding: 16px 12px;
+    }
+    #free-logo {
+        max-width: 50px;
+        width: 100%;
+    }
+    #pro-logo{
+        max-width: 75px;
+        width: 100%;
+    }
+    .check-mark-icon, .x-icon {
+        max-width: 30px;
+        width: 100%;
+    }   
     .call-to-action {
         background-color: #1B8FE0;
         
@@ -227,7 +243,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </style>
 </head>
 <body>
-    <div id="wrapper">
+    <center id="wrapper">
         <table class="main">
             <!-- PADDING BAR -->
             <tr>
@@ -281,18 +297,14 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                     <table>
                         <tr>
                             <td class="heading">
-                             Whatever you create...
+                                Give your business the advantage online!
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <table class="banner-food">
-                                    <tr>
-                                        <td>
-                                            <a href="#" class="white-button"><span>See Real Customer Sites</span></a>
-                                        </td>
-                                    </tr>
-                                </table>
+                            <td class="banner-travel">
+                                <img src="https://i.ibb.co/0YwvBhc/blue-cakeballs.jpg" alt="Cakepops" title="Yum!">
+                                <!-- CTA button -->
+                                <a href="#" class="white-button"><span>See Real Customer Sites</span></a>
                             </td>
                         </tr>
                     </table>
@@ -387,85 +399,69 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                                 <table>
                                     <tr>
                                         <td>
-                                            <p class="heading" style="margin-bottom: 0;">Which Compilr Site Is Right For You?</p>
-                                            <!-- <div style="display: flex;justify-content:space-around;
-                                            padding: 20px 32px;gap: 40px;">                                                               
-                                                <a href="#"><img src="images/free logo.png" alt="Free Account"
-                                                    width="160" title="Make a free account today!"></a>
-                                                <a href="#"><img src="images/free logo.png" alt="Free Account"
-                                                    width="160" title="Make a free account today!"></a>
-                                            </div> -->
-                                            <!-- Features list - white background -->
+                                            <p class="heading">Which Compilr Site Is Right For You?</p>
                                             <div>
                                                 <table>
                                                     <tr>
-                                                        <td style="padding: 20px;">
+                                                        <td>
                                                             <table>
-                                                                <tr>                                                                    
-                                                                    <td style="display: block;margin: 0 auto;">
-                                                                        <table class="features" width="480px">
+                                                                <tr>
+                                                                    <td>
+                                                                        <table class="features">
                                                                             <tr>
-                                                                                <th style="text-align: left;font-size: 28px;padding: 16px 12px;">Features</th>
-                                                                                <th style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/QChrmNQ/free-logo-blue.png" alt=""
-                                                                                    width="50px">
+                                                                                <th id="features-cell">
+                                                                                    Features
                                                                                 </th>
-                                                                                <th style="text-align: right;"><img src="images/pro-icon.png" alt=""
-                                                                                    width="75px"></th>
+                                                                                <th style="text-align: right;">
+                                                                                    <img src="https://i.ibb.co/QChrmNQ/free-logo-blue.png" id="free-logo" alt="">
+                                                                                </th>
+                                                                                <th style="text-align: right;">
+                                                                                    <img src="images/pro-icon.png" id="pro-logo" alt="">
+                                                                                </th>
                                                                             </tr> 
                                                                             <tr>
                                                                                 <td>Access to Compilr help forums</td>
                                                                                 <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
+                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" class="check-mark-icon" alt="">
                                                                                 </td>
                                                                                 <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
+                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" class="check-mark-icon" alt="">
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>Google search analytics data</td>
                                                                                 <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
+                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" class="check-mark-icon" alt="">
                                                                                 </td>
                                                                                 <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
+                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" class="check-mark-icon" alt="">
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>24/7 telephone and email support</td>
                                                                                 <td style="text-align: right;"> 
-                                                                                    <img src="https://i.ibb.co/NVt32xH/x-icon.png" alt=""
-                                                                                    width="30px">
+                                                                                    <img src="https://i.ibb.co/NVt32xH/x-icon.png" class="x-icon" alt="">
                                                                                 </td>
                                                                                 <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
+                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" class="check-mark-icon" alt="">
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>Advanced Google SEO tools</td>
                                                                                 <td style="text-align: right;"> 
-                                                                                    <img src="https://i.ibb.co/NVt32xH/x-icon.png" alt=""
-                                                                                    width="30px">
+                                                                                    <img src="https://i.ibb.co/NVt32xH/x-icon.png" class="x-icon" alt="">
                                                                                 </td>
                                                                                 <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
+                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" class="check-mark-icon" alt="">
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>Custom script embed support</td>
                                                                                 <td style="text-align: right;"> 
-                                                                                    <img src="https://i.ibb.co/NVt32xH/x-icon.png" alt=""
-                                                                                    width="30px">
+                                                                                    <img src="https://i.ibb.co/NVt32xH/x-icon.png" class="x-icon" alt="">
                                                                                 </td>
                                                                                 <td style="text-align: right;">
-                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" alt=""
-                                                                                    width="30px">
+                                                                                    <img src="https://i.ibb.co/DGx5SVZ/check-mark-icon.png" class="check-mark-icon" alt="">
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
@@ -577,6 +573,6 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
                 </td>
             </tr>            
         </table>
-    </div>    
+    </center>    
 </body>
 </html>
