@@ -99,33 +99,39 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         width: 100%;
         padding: 2vmin 0;
         display: inline-block;
-        text-align: left;
+        vertical-align: top;
+        text-align: center;
     }
     #nav-bar-logo {
-        display: block;
+        /* display: block;
         float: left;
         height: 100%;
         line-height: 100%;
-        padding-left: 2vmin;
-        width: 50vmin;
+        padding-left: 2vmin; */
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        width: 100%;
         max-width: 300px;
     }
     #nav-bar-logo > a, img {
         max-width: 180px;
-        width: 30vmin;
+        width: 100%;
+        text-align: center;
         height: fit-content;
     }    
     #social-icons {
-        display: table;
+        /* display: table; */
         max-width: 300px;
-        width: 50vmin;
-        margin-right: 2vmin;
-        text-align: right;
+        width: 100%;
+        /* margin-right: 2vmin; */
+        display: inline-block;
+        text-align: center;
         vertical-align: middle;
     }
     /* Resize all social icons */
     .social-icon {
-        width: 7vmin;
+        width: 100%;
         max-width: 32px;
     }
     .heading {
@@ -213,7 +219,7 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         margin: 0 auto;
         padding: 0.67vmin 2vmin;
         max-width: 480px;
-        width: 80vmin;
+        width: 100%;
     }
     .features th, .features td {
         border: 0;
@@ -227,15 +233,15 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     }
     #free-logo {
         max-width: 50px;
-        width: 8.33vmin;
+        width: 100%;
     }
     #pro-logo{
         max-width: 75px;
-        width: 12.5vmin;
+        width: 100%;
     }
     .check-mark-icon, .x-icon {
         max-width: 30px;
-        width: 5vmin;
+        width: 100%;
     }   
     .call-to-action {
         background-color: #1B8FE0;        
@@ -280,23 +286,21 @@ wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
             </tr>
             <!-- NAV BAR -->
             <tr>
-                <td>
-                    <table class="nav-bar">
+                <td style="background-color: #1B8FE0;">
+                    <table width="100%">
                         <tr>
-                            <td>
+                            <td class="nav-bar">
                             <!-- Compilr logo -->                                
                                 <table id="nav-bar-logo">
                                     <tr>
-                                        <td>
+                                        <td style="padding: 0 60px;">
                                             <a href="#"><img src="https://i.ibb.co/8YmqmVd/compilr-logo.png" alt="Compilr" title="Compilr"></a>
                                         </td>
                                     </tr>
                                 </table>
-                            </td>
-                            <td>
                                 <table id="social-icons">
                                     <tr>
-                                        <td>
+                                        <td style="padding: 0 79px;">
                                             <img src="https://i.ibb.co/4Y0CP6R/facebook-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!">
                                             <img src="https://i.ibb.co/dtp0pJ6/twitter-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!">
                                             <img src="https://i.ibb.co/0h3z9rf/instagram-icon.png" class="social-icon" alt="Facebook link" title="Visit our Facebook page!">
